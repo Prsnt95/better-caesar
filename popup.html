@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Enhancer</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Portal Enhancer</h1>
+    
+    <div class="settings-group">
+      <h2>Theme</h2>
+      <select id="themeSelect">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="auto">Auto</option>
+      </select>
+    </div>
+
+    <div class="settings-group">
+      <h2>Features</h2>
+      <label class="checkbox-label">
+        <input type="checkbox" id="enableCustomColors" />
+        <span>Enable Custom Colors</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="enableTileOrganizer" />
+        <span>Enable Tile Organizer</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="enableCompactMode" />
+        <span>Compact Mode</span>
+      </label>
+    </div>
+
+    <div class="settings-group">
+      <h2>Color Settings</h2>
+      <label>
+        Primary Color:
+        <input type="color" id="primaryColor" value="#168be8">
+      </label>
+      <label>
+        Secondary Color:
+        <input type="color" id="secondaryColor" value="#f0f1f5">
+      </label>
+    </div>
+
+    <div class="button-group">
+      <button id="saveBtn" class="btn btn-primary">Save Settings</button>
+      <button id="resetBtn" class="btn btn-secondary">Reset to Default</button>
+    </div>
+
+    <div id="status" class="status-message"></div>
+  </div>
+
+  <script src="js/popup.js"></script>
+</body>
+</html>
